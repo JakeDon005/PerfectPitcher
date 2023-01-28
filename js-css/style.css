@@ -1,0 +1,115 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border-color: black;
+	border-width: 1vmin;
+
+}
+
+body {
+	background-color: rgb(30, 30, 30) !important;
+	width: 100vw;
+	height: 100vh;
+	padding-left: 3vmax;
+	padding-right: 3vmax;
+	/*background: radial-gradient(100% 225% at 100% 0%, #FF0000 0%, #000000 100%), linear-gradient(236deg, #00C2FF 0%, #000000 100%), linear-gradient(135deg, #CDFFEB 0%, #CDFFEB 36%, #009F9D 36%, #009F9D 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%);
+	background-blend-mode: overlay, hard-light, normal;*/
+}
+
+
+
+
+#app {
+
+	color: white;
+	text-shadow: 0.2vmax 0.2vmax 1vmax black;
+}
+
+#header {
+	margin: 2vmax 0 2vmax 0;
+	text-align: center;
+	font-size: 2.2vmax;
+}
+
+
+.label{
+	display: block;
+	margin-bottom: 2vmin;
+	padding-top: 2vmin;
+	border-top:1px solid #8622ff ;
+}
+
+#modes,
+#widgets {
+	margin-bottom: 3vmax;
+
+}
+
+.irs {
+	margin-bottom: 2vmax;
+}
+
+#keyboard {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 2vmin;
+	align-items: center;
+	justify-items: center;
+
+}
+
+#keyboard button {
+	border-color: #c1c1c1;
+	border-radius: 2vmax;
+
+	background-color: rgb(30, 30, 30);
+	color: rgb(255, 255, 255);
+	height: 6vmax;
+	width: 100%;
+}
+
+
+#trainer {
+	position: fixed;
+
+	background-color: rgb(13, 17, 23);
+
+	display: grid;
+	bottom: -1px;
+	left: 0;
+
+	grid-template-columns: 3fr 1fr 3fr;
+	align-items: center;
+	justify-items: center;
+
+	width: 100%;
+	height: 10vmax;
+	border-top: 3px solid #919191;
+	;
+
+	border-radius: 1.4vmax 1.4vmax 0 0;
+
+}
+
+#trainer button {
+	background-color: rgb(32, 93, 255);
+	color: white;
+	border-radius: 3vmax;
+	width: 80%;
+	height: 70%;
+
+}
+
+#footer {
+	text-align: center;
+}
+
+#pad {
+	height: 10vmax;
+}
+
+a {
+	color: rgb(0, 136, 255);
+	text-decoration: none
+}

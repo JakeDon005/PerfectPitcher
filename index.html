@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="JakeDon">
+	<link rel="icon" href="./scr/jake.ico">
+	<title>绝对音感训练</title>
+
+
+
+	<script src="./modules/jquery-3.6.3.min.js"></script>
+	<script src="./modules/ion.rangeSlider.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./modules/ion.rangeSlider.css" />
+
+	<link rel="stylesheet" type="text/css" href="./js-css/style.css" />
+
+</head>
+
+<body style="background-color: grey;">
+	<div id="app">
+		<div id="header">
+			绝对音感训练「{{ nmode}}」模式--{{状态}}
+		</div>
+		<div id="modes">
+			<span class='label'>>模式</span>
+			<form>
+				<input type="text" id="mode-selector">
+			</form>
+		</div>
+
+
+		<div id="widgets">
+
+		</div>
+		<div id="keyboard">
+
+		</div>
+
+
+
+		<div id="trainer">
+			<button id="start">Start</button>
+			<span>{{trytimes}}</span>
+			<button id="again">Again</button>
+		</div>
+		<div id="footer">
+			<a href="https://github.com/JakeDon005/PerfectPitcher" target="_blank">Made-by:Richard-Jake-Don</a>
+		</div>
+
+		<div id="pad"></div>
+	</div>
+
+
+
+</body>
+
+
+<script src="./modules/vue.global.js"></script>
+<script src="./js-css/program.js"></script>
+
+</html>
