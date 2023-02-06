@@ -5,7 +5,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="JakeDon">
-	<link rel="icon" href="./scr/jake.ico">
+	<link rel="icon" href="./scr/pitcherLogo.ico">
 	<title>绝对音感训练</title>
 
 
@@ -13,8 +13,11 @@
 	<script src="./modules/jquery-3.6.3.min.js"></script>
 	<script src="./modules/ion.rangeSlider.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="./modules/ion.rangeSlider.css" />
+	<script src="./modules/vue.global.js"></script>
+
 
 	<link rel="stylesheet" type="text/css" href="./js-css/style.css" />
+	<link rel="manifest" href="manifest.json" />
 
 </head>
 
@@ -57,7 +60,13 @@
 </body>
 
 
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script>
+	if (navigator.serviceWorker != null) {
+		navigator.serviceWorker.register('sw.js')
+			.then(function (registration) {
+				console.log('Registered events at scope: ', registration.scope);
+			});
+	}
+</script>
 <script src="./js-css/program.js"></script>
-
 </html>
