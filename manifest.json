@@ -1,0 +1,15 @@
+{
+    "start_url": "index.html",
+    "name": "Pitcher",
+    "short_name": "PPT",
+    "description": "渐进式 Web App",
+    "display": "standalone",
+    "background_color": "blue",
+    "theme_color": "red",
+    "icons": [{
+            "src": "./scr/pitcherLogo.png",
+            "sizes": "536x536",
+            "type": "image/png"
+        }
+    ]
+}
