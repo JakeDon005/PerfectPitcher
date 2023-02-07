@@ -4,6 +4,7 @@
 	padding: 0;
 	border-color: black;
 	border-width: 1vmin;
+	user-select:none;
 
 }
 
