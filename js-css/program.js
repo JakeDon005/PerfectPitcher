@@ -189,8 +189,8 @@ const vm = Vue.createApp({
                     });
                     $滑块.data("ionRangeSlider").update({
                         type: "single",
-                        min: 2,
-                        max: 7,
+                        min: 3,
+                        max: 12,
                         from: value,
                         onFinish: function (data) {
                             app.基训数量 = data.from;
@@ -528,3 +528,6 @@ document.addEventListener('selectstart', function (e) {
 document.addEventListener('contextmenu', function (e) {
     e.preventDefault();
 });
+function dbllink() {
+    window.open("https://github.com/JakeDon005/PerfectPitcher");
+}
